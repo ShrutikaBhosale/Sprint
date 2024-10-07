@@ -1,0 +1,25 @@
+
+
+3 5
+first_element_location:100
+n:10
+start:4 count n stop
+7 first_element_location newFirst
+1 f s newFirst:0
+1 count one count
+1 first_element_location one first_element_location
+
+
+7 f s
+7 newFirst x
+7 x:0 f
+3 start
+
+
+
+
+stop:9
+f:1
+s:-1
+count:0
+one:1
