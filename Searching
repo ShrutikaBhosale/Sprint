@@ -1,0 +1,17 @@
+ 3 7 
+first_element:36 
+length:5 
+target:2
+result:0
+start:7 first_element Increase
+check:4 target Increase:first_element copyRes
+one:1 Increase one Increase
+1 alreadySearched one alreadySearched
+4 alreadySearched length copyNot
+3 check
+copyRes:7 one result 9
+copyNot:7 zero result 9
+
+
+e1:20 e2:6 e3:90 e4:1 
+e5:5 zero:0 alreadySearched:0
