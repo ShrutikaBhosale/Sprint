@@ -1,0 +1,32 @@
+3 5 number:n result:1
+start:7 zero result
+ 7 number num
+check1:5 zero num:0 check2
+9
+check2:7 num x
+check3:5 x:0 ten divide
+7 x a
+7 x b
+2 a:0 ten b:0
+1 Quo one Quo
+3 check3
+
+
+divide:7 x c
+7 c:0 Rem
+7 x d 
+7 Quo d:0
+1 Rem result result
+7 zero Quo
+3 check1
+
+
+
+
+n:1234
+Quo:0
+Rem:0
+Sum:0
+zero:0
+ten:10
+one:1
