@@ -1,0 +1,37 @@
+3 Start
+Result:100
+Start:4 Dividend Zero Stop
+Check:5 Dividend Divisor SetRem
+2 Dividend Divisor Dividend
+1 Quotient One Quotient 
+3 Check
+
+SetRem:7 Dividend Rem
+7 Result QuoCell
+7 Quotient QuoCell:0
+Check1:4 Rem Zero Stop
+Check2:4 Count Rem SetDividend
+1 Res Ten Res
+1 Count One Count 
+3 Check2
+
+SetDividend:7 Res Dividend 
+7 Zero Quotient 
+1 Result One Result 
+3 Check 
+
+
+
+
+
+Quotient:0
+Stop:9
+Dividend:28
+Divisor:5
+Rem:0
+Zero:0
+One:1
+Count:0
+Res:0
+Ten:10
+
