@@ -1,0 +1,14 @@
+3 5 num:23 res:0 
+3 10
+temp:0 counter:2 zero:0
+5 counter num 18 
+7 26 res stop:9
+4 temp num 32
+5 num temp 36 
+1 temp counter temp
+3 18
+7 zero res 9
+1 counter 36 counter 
+ 7 zero temp 
+3 10
+
