@@ -1,0 +1,189 @@
+3 start
+input:inputProg
+start:7
+input CommonStart
+start1:7 input startInstruc
+4 startInstruc:0 nine
+stop
+7 startInstruc Cst
+4 Cst:0 three
+RESETSTART
+7 startInstruc Cst1
+4 Cst1:0 one
+ADDITION
+7 startInstruc Cst2
+4 Cst2:0 two
+SUBTRACTION
+7 startInstruc Cst3
+4 Cst3:0 seven
+COPY
+7 startInstruc Cst4
+4 Cst4:0 zero
+PUT
+7 startInstruc Cst5
+4 Cst5:0 four
+JUMPIFEQUAL
+7 startInstruc Cst6
+4 Cst6:0 five
+JUMPIFLESS
+7 startInstruc Cst7
+4 Cst7:0 Ten
+MULTIPLY
+9  
+
+
+RESETSTART:1 startInstruc one NextCell
+7 NextCell:0 NewNext
+1 NewNext CommonStart NewStart
+2 NewStart one NewStart
+7 NewStart input
+3 start1
+
+ADDITION:1 startInstruc one NextCellA
+1 startInstruc two NextCellB
+1 startInstruc three NextCellC
+7 NextCellA:0 N1
+7 NextCellB:0 N2
+7 NextCellC:0 N3
+1 N1 CommonStart N1
+2 N1 one N1
+1 N2 CommonStart N2
+2 N2 one N2
+1 N3 CommonStart N3
+2 N3 one N3
+1 N1:0 N2:0 N3:0
+1 four startInstruc startInstruc
+7 startInstruc input
+3 start1
+
+
+
+SUBTRACTION:1 startInstruc one NextCellA1
+1 startInstruc two NextCellB1
+1 startInstruc three NextCellC1
+7 NextCellA1:0 N11
+7 NextCellB1:0 N22
+7 NextCellC1:0 N33
+1 N11 CommonStart N11
+2 N11 one N11
+1 N22 CommonStart N22
+2 N22 one N22
+1 N33 CommonStart N33
+2 N33 one N33
+2 N11:0 N22:0 N33:0
+1 four startInstruc startInstruc
+7 startInstruc input
+3 start1
+
+COPY:1 startInstruc one source
+7 source:0 FinalSource
+1 FinalSource CommonStart FinalSource
+2 FinalSource one FinalSource
+1 startInstruc two Destination
+7 Destination:0 FinalDestination
+1 FinalDestination CommonStart FinalDestination
+2 FinalDestination one FinalDestination
+7 FinalSource:0 FinalDestination:0
+1 three startInstruc startInstruc
+7 startInstruc input
+3 start1
+
+PUT:1 startInstruc one putValue
+1 startInstruc two putLoc
+1 putLoc:0 CommonStart putLoc
+2 putLoc one putLoc
+7 putLoc finalPutLoc
+7 putValue:0 finalPutLoc:0
+1 three startInstruc startInstruc
+7 startInstruc input
+3 start1
+
+JUMPIFEQUAL:1 startInstruc one value1
+1 value1:0 CommonStart value1Loc
+2 value1Loc one value1Loc
+1 startInstruc two value2
+1 value2:0 CommonStart value2Loc
+2 value2Loc one value2Loc
+1 startInstruc three JumpTo
+1 JumpTo:0 CommonStart JumpToLoc
+2 JumpToLoc one JumpToLoc
+1 startInstruc four DoThis
+4 value1Loc:0 value2Loc:0 JumpToLocation
+7 DoThis startInstruc
+7 startInstruc input
+3 start1
+JumpToLocation:7 JumpToLoc startInstruc
+7 startInstruc input
+3 start1
+
+
+
+JUMPIFLESS:1 startInstruc one value11
+1 value11:0 CommonStart value11Loc
+2 value11Loc one value11Loc
+1 startInstruc two value22
+1 value22:0 CommonStart value22Loc
+2 value22Loc one value22Loc
+1 startInstruc three JumpTo1
+1 JumpTo1:0 CommonStart JumpToLoc1
+2 JumpToLoc1 one JumpToLoc1
+1 startInstruc four DoThis1
+5 value11Loc:0 value22Loc:0 JumpToLocation1
+7 DoThis1 startInstruc
+7 startInstruc input
+3 start1
+JumpToLocation1:7 JumpToLoc1 startInstruc
+7 startInstruc input
+3 start1
+
+
+MULTIPLY:1 startInstruc one Num1
+1 Num1:0 CommonStart Num1
+2 Num1 one Num1
+1 startInstruc two Num2
+1 Num2:0 CommonStart Num2
+2 Num2 one Num2
+1 startInstruc three Res
+1 Res:0 CommonStart Res
+2 Res one Res
+1 startInstruc four Return
+1 Return:0 CommonStart Return
+2 Return one Return
+7 Num1 Num11
+7 Num2 Num22
+Check0:4 zero Num11:0 ReturnBack
+Check1:4 zero Num22:0 ReturnBack
+7 Num2 Num2Copy
+Check:4 Count Num2Copy:0 ReturnBack
+7 Res Result
+7 Num1 Num1Copy
+7 Result FinalRes
+1 Result:0 Num1Copy:0 FinalRes:0
+1 Count one Count
+3 Check 
+ReturnBack:7 Return input
+3 start 
+
+
+CommonStart:0
+NewStart:0
+NewNext:0
+prevJump:0
+stop:9
+NextIn:0
+DoThis:0
+DoThis1:0
+JumpToLoc:0
+JumpToLoc1:0
+Count:0
+zero:0
+one:1
+two:2
+three:3
+four:4
+five:5
+seven:7
+nine:9
+Ten:10
+
+inputProg:3 6 10 20 0 10 3 4 5 12 6 9 9 
