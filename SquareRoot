@@ -1,0 +1,21 @@
+3 5 num:625  res:0
+3 11 
+count:0 counter:1  sq:0 zero:0
+4 num zero stop
+4 num 46 67
+5 counter num 24
+stop:9
+4 count counter 38
+1 sq counter sq
+1 count 28 count
+3 24
+4 sq num 58
+5 num sq 62
+1 counter 46 counter 
+7 zero count
+7 zero sq
+3 19
+7 counter res 9
+2 counter 46 res 9
+7 46 res 9
+
