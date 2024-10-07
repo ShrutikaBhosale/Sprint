@@ -1,0 +1,36 @@
+3 5
+ first_element_location:n
+ length:5
+ 
+start:4 length zero stop
+1 first_element_location length t1 
+2 t1 one t2 
+s:4 t2 first_element_location stop
+5 first_element_location t2 swap
+9
+
+swap:7 first_element_location x
+7 t2 y
+
+7 x:0 temp1
+7 x b1
+7 y:0 b1:x
+7 y b2
+7  temp1 b2:y
+
+1 first_element_location one first_element_location
+2 t2 one t2 
+3 s
+
+
+one:1
+n:10 20 30 40 50
+t1:0
+t2:0
+a:0
+b:0
+stop:9
+  
+temp1:0 
+temp2:0
+zero:0
