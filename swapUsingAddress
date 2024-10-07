@@ -1,0 +1,14 @@
+3 start
+first:35
+second:36
+start:0 100 35
+0 200 36
+7 first x
+7 second y
+7 x:0 temp
+7 x a
+7 y:0 a:0
+7 y b
+7 temp b:0
+9
+temp:0
