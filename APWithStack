@@ -1,0 +1,26 @@
+3 start
+StackTop:Stack
+diff:-2
+numOfElement:15
+count:1
+FirstElement:31
+start:7 StackTop StackLoc 
+7 FirstElement StackLoc:0
+check:4 numOfElement count  stop
+1 FirstElement diff FirstElement
+1 StackLoc one StackLoc
+7 StackLoc newStack
+7 FirstElement newStack:0
+1 count one count
+3 check
+
+
+
+
+
+
+
+stop:9
+one:1
+Element:0
+Stack:0 
